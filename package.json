@@ -8,7 +8,7 @@
         "vscode": "^1.50.0"
     },
     "repository": {
-        "type": "https",
+        "type": "git",
         "url": "https://github.com/markwylde/vscode-relative-from-current.git"
     },
     "categories": [
