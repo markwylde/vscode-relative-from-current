@@ -1,0 +1,54 @@
+{
+	"name": "relative-from-current",
+	"displayName": "relative-from-current",
+	"publisher": "markwylde",
+	"description": "Insert the relative path from the current open file",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/markwylde/vscode-relative-from-current.git"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:relative-from-current.insertRelativePath",
+		"onCommand:relative-from-current.copyRelativePath"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "relative-from-current.insertRelativePath",
+				"title": "Insert Relative Path"
+			},
+			{
+				"command": "relative-from-current.copyRelativePath",
+				"title": "Copy Relative Path to clipboard"
+			}
+		],
+		"menus": {
+			"explorer/context": [{
+				"when": "!explorerResourceIsFolder",
+				"command": "relative-from-current.insertRelativePath"
+			}, {
+				"when": "!explorerResourceIsFolder",
+				"command": "relative-from-current.copyRelativePath"
+			}]
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"vscode-test": "^1.5.0"
+	}
+}
