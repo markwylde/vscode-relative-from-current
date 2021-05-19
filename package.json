@@ -8,8 +8,8 @@
         "vscode": "^1.50.0"
     },
     "repository": {
-        "type": "git",
-        "url": "git+https://github.com/markwylde/vscode-relative-from-current.git"
+        "type": "https",
+        "url": "https://github.com/markwylde/vscode-relative-from-current.git"
     },
     "categories": [
         "Other"
@@ -54,5 +54,6 @@
         "mocha": "^8.2.1",
         "vscode-test": "^1.5.0"
     },
+    "icon": "icon.png",
     "license": "MIT"
 }
