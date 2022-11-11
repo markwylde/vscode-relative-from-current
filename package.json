@@ -51,7 +51,7 @@
     "devDependencies": {
         "eslint": "^7.19.0",
         "glob": "^7.1.6",
-        "mocha": "^8.2.1",
+        "mocha": "^10.1.0",
         "vscode-test": "^1.5.0"
     },
     "icon": "icon.png",
